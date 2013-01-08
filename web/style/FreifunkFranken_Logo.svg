@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300"
+   height="300"
+   id="svg3038"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="121214_FreifunkFranken_Logo_A.svg">
+  <defs
+     id="defs3040" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="152.20352"
+     inkscape:cy="133.90615"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="878"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-page="false" />
+  <metadata
+     id="metadata3043">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-752.36218)">
+    <g
+       id="g3974"
+       transform="matrix(2.031387,0,0,2.0265815,-35.584238,-803.35619)">
+      <g
+         transform="matrix(1.44,0,0,1.44,-80.648169,344.93833)"
+         id="g3117">
+        <circle
+           d="M 58,54 C 58,66.150264 48.150264,76 36,76 23.849736,76 14,66.150264 14,54 14,41.849736 23.849736,32 36,32 c 12.150264,0 22,9.849736 22,22 z"
+           style="fill:none;stroke:#dd0066;stroke-width:1px"
+           sodipodi:ry="22"
+           sodipodi:rx="22"
+           sodipodi:cy="54"
+           sodipodi:cx="36"
+           cx="36"
+           cy="54"
+           r="22"
+           id="circle3048"
+           transform="translate(59.258859,316.23328)" />
+        <circle
+           d="M 96,44 C 96,56.150264 86.150264,66 74,66 61.849736,66 52,56.150264 52,44 52,31.849736 61.849736,22 74,22 c 12.150264,0 22,9.849736 22,22 z"
+           style="fill:none;stroke:#dd0066;stroke-width:1px"
+           sodipodi:ry="22"
+           sodipodi:rx="22"
+           sodipodi:cy="44"
+           sodipodi:cx="74"
+           cx="74"
+           cy="44"
+           r="22"
+           id="circle3050"
+           transform="translate(59.258859,316.23328)" />
+        <circle
+           d="M 103,44 C 103,60.016258 90.016258,73 74,73 57.983742,73 45,60.016258 45,44 45,27.983742 57.983742,15 74,15 c 16.016258,0 29,12.983742 29,29 z"
+           style="fill:none;stroke:#dd0066;stroke-width:6px"
+           sodipodi:ry="29"
+           sodipodi:rx="29"
+           sodipodi:cy="44"
+           sodipodi:cx="74"
+           cx="74"
+           cy="44"
+           r="29"
+           id="circle3052"
+           transform="translate(59.258859,316.23328)" />
+        <polygon
+           style="fill:#ffcc00"
+           points="22,52 30,52 26,56 31,56 37,50 31,44 26,44 30,48 22,48 "
+           id="polygon3054"
+           transform="translate(59.258859,316.23328)" />
+        <polygon
+           style="fill:#ffcc00"
+           points="73,59 81,59 75,53 88,53 88,47 75,47 81,41 73,41 64,50 "
+           id="polygon3056"
+           transform="translate(59.258859,316.23328)" />
+        <circle
+           d="M 58,54 C 58,66.150264 48.150264,76 36,76 23.849736,76 14,66.150264 14,54 14,41.849736 23.849736,32 36,32 c 12.150264,0 22,9.849736 22,22 z"
+           style="fill:none;stroke:#dd0066;stroke-width:1px"
+           sodipodi:ry="22"
+           sodipodi:rx="22"
+           sodipodi:cy="54"
+           sodipodi:cx="36"
+           cx="36"
+           cy="54"
+           r="22"
+           id="circle3048-0"
+           transform="translate(88.107139,266.93362)" />
+        <polygon
+           style="fill:#ffcc00"
+           points="22,52 30,52 26,56 31,56 37,50 31,44 26,44 30,48 22,48 "
+           id="polygon3054-9"
+           transform="matrix(-0.00905475,0.999959,-0.999959,-0.00905475,181.97934,288.78043)" />
+      </g>
+    </g>
+  </g>
+</svg>
