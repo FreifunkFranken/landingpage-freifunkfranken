@@ -1,0 +1,114 @@
+/* CUSTOM STYLES - for 'multiple column' */
+ 
+body { 
+  max-width: 50.618em;
+  padding: 0 1.618em;
+  box-shadow: 0px 0px 15px 0px #CCC;
+}
+
+div {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+
+em {
+  color: green;
+  font-weight: 700;
+}
+
+header h2:before, header h2:after { width: 42%; }
+  
+h1 { font-size: 4.4em; line-height:1.618em; margin-bottom:0.1em; }
+    
+h1 span {
+  font-family: "proxima-nova-1","proxima-nova-2", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing:0.1em;
+  font-size:0.382em;
+  line-height:3.236em;
+  display:block;
+  }
+  
+h1 span:before, h1 span:after {
+  content:"";
+  border-top:1px solid #333;
+  height: 0.1em;
+  width: 19%;
+  display: block;
+  margin-top: 1.618em;
+  }
+  
+h1 span:before { float: left; }  
+h1 span:after { float: right; }
+
+ul { margin-left: 0.4em; }
+ol { margin-left: 0.4em; }
+
+section.main {
+  height: 10em;
+}
+p.intro {
+  font-size: 1.618em;
+  line-height:1.4289em;
+  max-width: 20em;
+  margin-bottom: 1em;
+  }
+
+aside {
+  float: right;
+  clear: right;
+  width: 16em;
+  margin-top: -10em;
+  height:auto;
+  }
+
+/*
+aside div {
+  padding:0.809em 1em 0;  
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;  
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;  
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;  
+  text-align:left;  
+  }
+*/
+
+/* MEDIA QUERIES */
+
+/* CUSTOM STYLES - for 'single column' */
+@media screen and (min-width: 36.236em) and (max-width: 53em) {
+    
+body { width: 33em; }
+
+header h2:before, header h2:after { width: 30%; }
+
+h1 { font-size: 2.618em; line-height: 1.4em; }
+h1 span { font-size:0.5em; }
+h1 span:before, h1 span:after { width: 10%; }
+
+p.intro {
+  font-size: 1.309em;
+  margin-bottom: 1em;
+  max-width: 33em;
+  }
+  
+aside {
+  float: none;
+  width: auto;
+  height: auto;
+  margin: 0 0 2.2em;
+  }
+  
+aside div { 
+  display: inline-block;
+  padding: 0.809em;
+  text-align: center; 
+  }
+  
+}
