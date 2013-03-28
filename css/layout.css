@@ -24,10 +24,10 @@ h1 { font-size: 4.4em; line-height:1.618em; margin-bottom:0.1em; }
 h1 span {
   font-family: "proxima-nova-1","proxima-nova-2", arial, helvetica, sans-serif;
   text-transform: uppercase;
-  letter-spacing:0.1em;
-  font-size:0.382em;
-  line-height:3.236em;
-  display:block;
+  letter-spacing: 0.1em;
+  font-size: 0.3em;
+  line-height: 3.236em;
+  display: block;
   }
   
 h1 span:before, h1 span:after {
