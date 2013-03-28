@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="40" y="32" width="401" height="537" text="Tablet Browser&#xA;http://..." measuredWidth="401" measuredHeight="537"/>
+  <widgets xsi:type="model:Checkbox" id="2" x="64" y="472" text="Habs verstanden!" measuredWidth="142" measuredHeight="29" selected="true">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="4" x="184" y="512" text="Los gehts!" measuredWidth="91" measuredHeight="31" background="#f4cccc">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="64" y="176" text="Was ist Freifunk?" measuredWidth="167" measuredHeight="36">
+    <font size="20px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="7" x="64" y="211" width="353" height="62" text="Freifunk ist ein freies Bürgernetz auf WLAN-Basis. Jeder kann mitmachen, indem er einen Freifunk-Knoten bei sich aufstellt. Mach mit und hilf mit das Netz über die ganze Stadt zu verteilen!&#xD;&#xA;Infos unter freifunk-franken.de" measuredWidth="353" measuredHeight="62" dummyText="true">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="64" y="272" text="Was ist mit der Sicherheit?" measuredWidth="259" measuredHeight="36">
+    <font size="20px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="9" x="64" y="307" width="353" height="65" text="im WLAN werden deine Daten nicht automatisch verschlüsselt, könnten also von anderen teilnehmern mitgelesen werden. Achte also immer darauf, dass du selbst deine Daten verschlüsselt z.B. in dem du https:// verwendest!" measuredWidth="353" measuredHeight="65" dummyText="true">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="64" y="368" text="Sei Fair und Sozial!" measuredWidth="185" measuredHeight="36">
+    <font size="20px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="11" x="64" y="403" width="353" height="65" text="Dieses Netz wird ehrenamtlich von Bürgern betrieben. bitte verhalte dich immer Fair. Versuche deinen Traffic möglichst gering zuhalten und tue keine unerlaubten oder unmoralischen Dinge im Netz!" measuredWidth="353" measuredHeight="65" dummyText="true">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="160" y="94" text="Willkommen!" measuredWidth="194" measuredHeight="53">
+    <font size="32px"/>
+  </widgets>
+  <widgets xsi:type="model:SVGImage" id="13" x="80" y="100" width="70" height="69" measuredWidth="70" measuredHeight="69" src="../style/FreifunkFranken_Logo.svg"/>
+  <widgets xsi:type="model:Label" id="14" x="160" y="133" text="im Netz von Freifunk Franken" measuredWidth="260" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

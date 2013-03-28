@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="40" y="32" width="249" height="433" text="Mobile Browser&#xA;http://..." measuredWidth="249" measuredHeight="433"/>
+  <widgets xsi:type="model:Checkbox" id="2" x="50" y="396" text="Habs verstanden!" measuredWidth="142" measuredHeight="29" selected="true">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Accordion" id="3" x="50" y="240" width="229" text="Was ist Freifunk?&#xA;-Freifunk ist ein freies Bürgernetz&#xA;-auf WLAN-Basis.&#xA;-Infos unter freifunk-franken.de&#xA;Was ist mit der Sicherheit?&#xA;Sei Fair und Sozial!" measuredWidth="229" measuredHeight="157" selection="0">
+    <items x="0" y="2" width="229" height="25" text="Was ist Freifunk?"/>
+    <items x="0" y="27" width="229" height="25" text="-Freifunk ist ein freies Bürgernetz"/>
+    <items x="0" y="52" width="229" height="25" text="-auf WLAN-Basis."/>
+    <items x="0" y="77" width="229" height="25" text="-Infos unter freifunk-franken.de"/>
+    <items x="0" y="107" width="229" height="25" text="Was ist mit der Sicherheit?"/>
+    <items x="0" y="132" width="229" height="25" text="Sei Fair und Sozial!"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="4" x="120" y="424" text="Los gehts!" measuredWidth="91" measuredHeight="31" background="#f4cccc">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="64" y="162" text="Willkommen!" measuredWidth="194" measuredHeight="53">
+    <font size="32px"/>
+  </widgets>
+  <widgets xsi:type="model:SVGImage" id="7" x="128" y="94" width="70" height="69" measuredWidth="70" measuredHeight="69" src="../style/FreifunkFranken_Logo.svg"/>
+  <widgets xsi:type="model:Label" id="8" x="50" y="200" text="im Netz von Freifunk Franken" measuredWidth="228" measuredHeight="31">
+    <font size="17px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
