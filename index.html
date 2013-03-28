@@ -1,29 +1,128 @@
+
 <!DOCTYPE html>
-<!-- <html class="no-js" manifest="app.appcache">  -->
-<html>
+
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6 grid"><![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7 grid"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8 grid"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9 grid"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js grid"> <!--<![endif]-->
+
+
 <head>
-  <meta charset="utf-8">
-  <title>Freifunk Franken</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="HandheldFriendly" content="True">
-  <meta name="description" content="Freifunk Franken Landingpage">
-  <meta http-equiv="cleartype" content="on">
-  <link rel="stylesheet" href="style/simple.css" />
+<meta charset="utf-8">
+
+<title>The Goldilocks Approach to Responsive Web Design</title>
+
+<link rel="stylesheet" href="css/global.css" media="all">
+<link rel="stylesheet" href="css/layout.css" media="all and (min-width: 36.236em)">
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
+<!-- These styles are for presentation only -->
+<link rel="stylesheet" href="css/presentation-global.css" media="all">
+<link rel="stylesheet" href="css/presentation-layout.css" media="all and (min-width: 36.236em)">    
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/presentation-layout.css" media="all">
+<![endif]-->
+<!-- End presentation styles -->
+
+<script src="js/libs/modernizr-1.7.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+<script type="text/javascript" src="http://use.typekit.com/txv7lnj.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
+
 <body>
-<div id="wrapper">
-  <object class="logo" data="style/FreifunkFranken_Logo.svg" width="300" height="300" type="image/svg+xml">
-    <img class="logo" src="style/FreifunkFranken_Logo.png" width="300" height="300" alt="Logo Freifunk Franken" />
-  </object>
-  <h1>franken.freifunk.net</h1>
-  <div class="text">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  </div>
-  <div id="buttonWrapper">
-    <a href="#" class="button"><span>Let me in!</span></a>
-  </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+<div id="container">
+<article>
+  <div class="gutter-1"></div>
+  <div class="gutter-2"></div>
+    
+  <header>
+    <h1>Freifunk Franken<span>Freies Netz für freie Bürger!</span></h1></header>
+  </header> 
+
+<section class="main">
+  <!-- <section class="column-width"></section><section class="aside-width"></section> -->
+  <p class="intro">
+  Freifunk ist ein <strong>freies und kostenloses</strong> Bürgernetz auf WLAN Basis! Wenn du willst kannst du hier anonym und ganz ohne Zensur mitsurfen.
+  </p>
+</section>
+
+<aside>
+  <h3>Nutzungsbedingungen</h3>
+  <p>Ich stimme zu die Nutzungsbedingungen zu akzeptieren ...blbala </p>
+  <div class="button"><a href="http://landingpage.freifun.franken.de/access"><span>Weitersurfen</span></a></div>
+</aside>
+
+<section>
+  <h3>Wie frei und kostenlos?</h3>
+  <p>Freifunk ist ein nicht kommerzielles Bürgernetz. Sie Freifunk-Initiative hat sich zum Ziel gemacht eine unabhängige Netz-Infrastruktur aufzubauen um von kommerziellen Anbietern unabhängig zu sein. Freifunk gibt es in weltweit in vielen Städten und möchte weltweit Menschen ohne Zensur und Überwachung vernetzen. Mehr Infos gibts unter <a href="https://www.freifunk-franken.de">Freifunk-Franken.de</a></p>
+</section> 
+
+<section>
+  <h3>Anonym? Und was ist mit der Sicherheit?</h3>
+  <p>Das Freifunk-WLAN istoffen für jeden und natürlich unverschüsselt.  Wie auch bei anderen öffentlichen WLAN-Zugängen solltest du darauf achten deine Verbindungen zu verschlüssen und keine Passwörter im Klartext zu übertragen. Dies erreichst du z.B. dadurch, daß du <em>https</em> verwendest!</p>
+</section>
+
+<section>
+  <h3>Sei Fair uns Sozial!</h3>
+  <p>Dieses Netz wird ehrenamtlich von Bürgern betrieben. Bitte verhalte dich immer sozial und fair. Versuche keinen unötigen Traffik zu erzeugen und tue keine gesetzeswiedrigen oder unmoralischen Dinge - weder online noch offline!</p>
+</section> 
+
+<section class="sponsores">
+  <h3>Knoten in deiner Nähe:</h3>
+  <p><a href="https://www.wunschik.it"><img src="images/knodes/knode_wunschik-it.png" alt="Wunschik, IT-Solution"></a></p>
+  <p><a href="https://www.freifunk.net"><img src="images/knodes/knode_piraten-fuerth.png" alt="Piratenpartei Fürth"></a></p>
+  <p><a href="https://www.freifunk.net"><img src="images/knodes/knode_sparkasse.png" alt="Sparkasse Fürth"></a></p>
+</section>
+
+<footer class="clearfix">
+  <p>
+    <strong>Impressum</strong>
+  </p>
+  <p>
+    Freifunk Franken, z.H. Alexander Wunschik<br />
+    Cadolzburger Straße 16, 90766 Fürth<br />
+    eMail: freifunk@wunschik.net
+  </p>
+  <p>
+    <strong>Statistiken:</strong>
+  </p>
+  <p>
+    Online Benutzer: 63<br />
+    Online Knoten: 39<br />
+    Gateway-Traffic: ca. 1.2 GB/h<br />
+  </p>
+</footer>
+
+</article>
+    
+</div><!--! end of #container -->
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js">\x3C/script>')</script>
+
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/libs/waypoints.min.js"></script>
+<![endif]-->
+
+<!-- Scripts -->
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/DOMAssistantCompressed-2.8.js"></script>
+<script src="js/libs/selectivizr-1.0.1.js"></script>
+<script src="js/libs/respond.min.js"></script>
+<![endif]-->
+  
 </body>
 </html>
