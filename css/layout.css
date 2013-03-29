@@ -46,22 +46,22 @@ ul { margin-left: 0.4em; }
 ol { margin-left: 0.4em; }
 
 section.main {
-  height: 10em;
+  height: 13em;
 }
 p.intro {
   font-size: 1.618em;
   line-height:1.4289em;
   max-width: 20em;
   margin-bottom: 1em;
-  }
+}
 
 aside {
   float: right;
   clear: right;
   width: 16em;
-  margin-top: -10em;
+  margin-top: -13em;
   height:auto;
-  }
+}
 
 /*
 aside div {
