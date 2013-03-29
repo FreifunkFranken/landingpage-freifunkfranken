@@ -12,8 +12,8 @@ Diese Seite befindet sich noch in aktiver Entwicklung und wird noch nicht produk
 Mitmachen
 ---------
 
-Es dürfen gerne aussagekräftige Issues angelegt werden. Bitte für jedes Problem ein eigenes Ticket.
-Es werden auch gerne Pull-Requets angenommen. Bitte die Request möglich klein halten und immer nur ein Issue auf einmal fixen.
+Es dÃ¼rfen gerne aussagekrÃ¤ftige Issues angelegt werden. Bitte fÃ¼r jedes Problem ein eigenes Ticket.
+Es werden auch gerne Pull-Requets angenommen. Bitte die Request mÃ¶glich klein halten und immer nur ein Issue auf einmal fixen.
 Commit-Masseges und Source-Comments bitte auf Englisch.
 Danke!
 
