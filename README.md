@@ -14,6 +14,7 @@ Mitmachen
 
 Es dürfen gerne aussagekräftige Issues angelegt werden. Bitte für jedes Problem ein eigenes Ticket.
 Es werden auch gerne Pull-Requets angenommen. Bitte die Request möglich klein halten und immer nur ein Issue auf einmal fixen.
+Commit-Masseges und Source-Comments bitte auf Englisch.
 Danke!
 
 Installation
