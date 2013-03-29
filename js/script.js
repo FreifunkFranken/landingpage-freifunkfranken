@@ -63,9 +63,9 @@ function showNearNodes(nodes, position) {
 	var sonsores = $('section.sponsores');
 	sonsores.find('h3').html('Knoten in deiner Nähe:');
 	sonsores.find('p').remove();
-	sonsores.append('<p class="sponsor">' + nodes[0].name + '</p>');
-	sonsores.append('<p class="sponsor">' + nodes[1].name + '</p>');
-	sonsores.append('<p class="sponsor">' + nodes[2].name + '</p>');
+	sonsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[0].id + '">' + nodes[0].name + '</a></p>');
+	sonsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[1].id + '">' + nodes[1].name + '</a></p>');
+	sonsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[2].id + '">' + nodes[2].name + '</a></p>');
 }
 
 function loadKnotList(position) {
