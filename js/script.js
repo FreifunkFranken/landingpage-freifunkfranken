@@ -30,11 +30,11 @@ $('.column-width').waypoint(function(event, direction) {
 
 
 function errors_action(error) {
-  switch(error.code){
-    case error.PERMISSION_DENIED: alert("Der Nutzer m&ouml;chte keine Daten teilen.");break;
-    case error.POSITION_UNAVAILABLE: alert("Die Geodaten sind nicht erreichbar.");break;
-    case error.PERMISSION_DENIED: alert("Timeout erhalten");break;
-    default: alert ("Unbekannter Error");break;
+  switch(error.code) {
+    case error.PERMISSION_DENIED: console.error("Der Nutzer möchte keine Daten teilen."); break;
+    case error.POSITION_UNAVAILABLE: console.error("Die Geodaten sind nicht erreichbar."); break;
+    case error.PERMISSION_DENIED: console.error("Timeout erhalten"); break;
+    default: console.error("Unbekannter Error"); break;
   }
 }
 
