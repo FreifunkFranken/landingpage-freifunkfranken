@@ -22,5 +22,37 @@
         "online": true,
         "lat": "49.478969869905",
         "lon": "10.977626423619"
+    },
+    {
+        "id": 33,
+        "name": "UnfindenGutzeit2",
+        "user_id": 0,
+        "online": true,
+        "lat": "50.093631607291",
+        "lon": "10.566720565257"
+    },
+    {
+        "id": 9,
+        "name": "LaForge",
+        "user_id": 4,
+        "online": true,
+        "lat": "49.380217681136",
+        "lon": "10.191540679693"
+    },
+    {
+        "id": 85,
+        "name": "Haag1",
+        "user_id": 21,
+        "online": true,
+        "lat": " 49.29637873906",
+        "lon": "10.816050016024"
+    },
+    {
+        "id": 62,
+        "name": "Frauenaurach",
+        "user_id": 17,
+        "online": true,
+        "lat": "49.568965664894",
+        "lon": "10.956858072029"
     }
 ]
