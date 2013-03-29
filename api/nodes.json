@@ -1,0 +1,26 @@
+[
+    {
+        "id": 14,
+        "name": "KathrynJaneway",
+        "user_id": 6,
+        "online": true,
+        "lat": "49.47891409401",
+        "lon": "10.977642531246"
+    },
+    {
+        "id": 47,
+        "name": "Tuvok",
+        "user_id": 6,
+        "online": true,
+        "lat": "49.478980316788",
+        "lon": "10.977545971722"
+    },
+    {
+        "id": 39,
+        "name": "HarryKim",
+        "user_id": 6,
+        "online": true,
+        "lat": "49.478969869905",
+        "lon": "10.977626423619"
+    }
+]

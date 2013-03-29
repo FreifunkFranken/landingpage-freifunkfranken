@@ -28,6 +28,12 @@ $('.column-width').waypoint(function(event, direction) {
 });
 */
 
+/* START GEO Location experiments: */
+$(document).ready(function() {
+
+geo = {};
+geo.position = null;
+geo.isLoaded = false;
 
 function errors_action(error) {
   switch(error.code) {
@@ -38,11 +44,60 @@ function errors_action(error) {
   }
 }
 
+function showNearNodes(nodes, position) {	
+	//calculate distances to the client
+	$.each(nodes, function(index, node) {
+		var delta_lat = Math.abs(node.lat - position.coords.latitude);
+		var delta_lon = Math.abs(node.lon - position.coords.longitude);
+		
+		var distance = Math.sqrt(delta_lat*delta_lat + delta_lon*delta_lon);
+		node.distance = distance;
+		//console.log("Node " + node.name + ": Distance: " + distance);
+	});
+	
+	
+	nodes.sort(function (a, b) {
+		return ((a.distance < b.distance) ? -1 : ((a.distance > b.distance) ? 1 : 0));
+	});
+	
+	var sonsores = $('section.sponsores');
+	sonsores.find('h3').html('Knoten in deiner Nähe:');
+	sonsores.find('p').remove();
+	sonsores.append('<p class="sponsor">' + nodes[0].name + '</p>');
+	sonsores.append('<p class="sponsor">' + nodes[1].name + '</p>');
+	sonsores.append('<p class="sponsor">' + nodes[2].name + '</p>');
+}
+
+function loadKnotList(position) {
+	var nodes;
+	$.getJSON('api/nodes.json', function(nodes, textStatus, jqXHR) {
+		showNearNodes(nodes, position);
+	}).fail(function(jqxhr, textStatus, error) {
+		console.error('error loading nodes.json: ', error)
+	});
+}
+
 function geolocation_action(position){
-  $('#statistics_position').html(
+	//only do this once
+	if (geo.isLoaded) return;
+	geo.isLoaded = true;
+	setTimeout(function() {
+		//invalidate the position after 5 Seconds
+		geo.isLoaded = false;
+	}, 5000);
+	
+	geo.position = position;
+	
+	$('#statistics_position').html(
     "LON: " + Math.round( position.coords.longitude *10000)/10000 + ", " + 
     "LAT: " + Math.round( position.coords.latitude *10000)/10000
   );
+  loadKnotList(position);
 }
 
-navigator.geolocation.getCurrentPosition(geolocation_action, errors_action);
+if (!geo.isLoaded) {
+	navigator.geolocation.getCurrentPosition(geolocation_action, errors_action);
+}
+
+});
+/* END GEO Location experiments: */
