@@ -27,3 +27,22 @@ $('.column-width').waypoint(function(event, direction) {
   }
 });
 */
+
+
+function errors_action(error) {
+  switch(error.code){
+    case error.PERMISSION_DENIED: alert("Der Nutzer m&ouml;chte keine Daten teilen.");break;
+    case error.POSITION_UNAVAILABLE: alert("Die Geodaten sind nicht erreichbar.");break;
+    case error.PERMISSION_DENIED: alert("Timeout erhalten");break;
+    default: alert ("Unbekannter Error");break;
+  }
+}
+
+function geolocation_action(position){
+  $('#statistics_position').html(
+    "LON: " + Math.round( position.coords.longitude *10000)/10000 + ", " + 
+    "LAT: " + Math.round( position.coords.latitude *10000)/10000
+  );
+}
+
+navigator.geolocation.getCurrentPosition(geolocation_action, errors_action);
