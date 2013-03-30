@@ -13,10 +13,23 @@
            "z-index": "-999",
            "overflow": "hidden"
     });
-  var script = document.createElement( 'script' );
-  script.type = 'text/javascript';
-  script.src = "js/libs/processing-1.4.1.min.js";
-  $('body').prepend(canvas).append(script);
+    
+    var btnClose = $('<div class="button" id="btnCloseMesh">Animation schließen</div>')
+      .css({
+        "position": "fixed", 
+        "top": "10px", 
+        "right": "10px", 
+        "width": "160px"
+    }).click(function() {
+      canvas.remove();
+      btnClose.remove();
+    });
+    
+    var script = document.createElement( 'script' );
+    script.type = 'text/javascript';
+    script.src = "js/libs/processing-1.4.1.min.js";
+    
+    $('body').prepend(btnClose).prepend(canvas).append(script);
  }
  
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
