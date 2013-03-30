@@ -14,22 +14,26 @@
            "overflow": "hidden"
     });
     
-    var btnClose = $('<div class="button" id="btnCloseMesh">Animation schließen</div>')
+    var btnClose = $('<div class="button" id="btnCloseMesh">Animation entfernen</div>')
       .css({
         "position": "fixed", 
         "top": "10px", 
         "right": "10px", 
         "width": "160px"
     }).click(function() {
-      canvas.remove();
       btnClose.remove();
+      canvas.fadeOut(1000, function() {
+        canvas.remove();
+      });
     });
     
     var script = document.createElement( 'script' );
     script.type = 'text/javascript';
     script.src = "js/libs/processing-1.4.1.min.js";
     
+    canvas.hide();
     $('body').prepend(btnClose).prepend(canvas).append(script);
+    canvas.fadeIn(2000);
  }
  
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
