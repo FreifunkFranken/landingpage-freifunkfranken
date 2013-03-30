@@ -37,8 +37,8 @@ h1 span:before, h1 span:after {
   width: 19%;
   display: block;
   margin-top: 1.618em;
-  }
-  
+}
+
 h1 span:before { float: left; }  
 h1 span:after { float: right; }
 
@@ -46,7 +46,7 @@ ul { margin-left: 0.4em; }
 ol { margin-left: 0.4em; }
 
 section.main {
-  height: 13em;
+  height: 10em;
 }
 p.intro {
   font-size: 1.618em;
@@ -59,7 +59,7 @@ aside {
   float: right;
   clear: right;
   width: 16em;
-  margin-top: -13em;
+  margin-top: -10em;
   height:auto;
 }
 
