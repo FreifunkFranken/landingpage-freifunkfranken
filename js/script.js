@@ -60,12 +60,13 @@ function showNearNodes(nodes, position) {
 		return ((a.distance < b.distance) ? -1 : ((a.distance > b.distance) ? 1 : 0));
 	});
 	
-	var sonsores = $('section.sponsores');
-	sonsores.find('h3').html('Knoten in deiner Nähe:');
-	sonsores.find('p').remove();
-	sonsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[0].id + '">' + nodes[0].name + '</a></p>');
-	sonsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[1].id + '">' + nodes[1].name + '</a></p>');
-	sonsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[2].id + '">' + nodes[2].name + '</a></p>');
+	var sponsores = $('section.sponsores');
+	sponsores.hide();
+	sponsores.append('<h3>Knoten in deiner Nähe:</h3>');
+	sponsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[0].id + '">' + nodes[0].name + '</a></p>');
+	sponsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[1].id + '">' + nodes[1].name + '</a></p>');
+	sponsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[2].id + '">' + nodes[2].name + '</a></p>');
+	sponsores.fadeIn('slow');
 }
 
 function loadKnotList(position) {
@@ -89,10 +90,10 @@ function geolocation_action(position){
 	geo.position = position;
 	
 	$('#statistics_position').html(
-    "LON: " + Math.round( position.coords.longitude *10000)/10000 + ", " + 
-    "LAT: " + Math.round( position.coords.latitude *10000)/10000
-  );
-  loadKnotList(position);
+		"LON: " + Math.round( position.coords.longitude *10000)/10000 + ", " + 
+		"LAT: " + Math.round( position.coords.latitude *10000)/10000
+	);
+	loadKnotList(position);
 }
 
 if (!geo.isLoaded) {
