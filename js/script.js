@@ -62,11 +62,24 @@ function showNearNodes(nodes, position) {
 	
 	var sponsores = $('section.sponsores');
 	sponsores.hide();
-	sponsores.append('<h3>Knoten in deiner Nähe:</h3>');
-	sponsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[0].id + '">' + nodes[0].name + '</a></p>');
-	sponsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[1].id + '">' + nodes[1].name + '</a></p>');
-	sponsores.append('<p class="sponsor"><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[2].id + '">' + nodes[2].name + '</a></p>');
-	sponsores.fadeIn('slow');
+
+	var nearNodesAvailible = false;
+	var sponsoresList = $('<ul>');
+	
+	$.each(nodes, function(index, node) {
+		//only show nodes that are realy near the user. Nodes in many km distance are not interesting.
+		if (nodes[index].distance < 0.001) {
+			sponsoresList.append('<li><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[index].id + '">' + nodes[index].name + '</a></li>');
+			nearNodesAvailible = true;
+		}
+	});
+	
+	// if any nearby nodes exist show them 
+	if (nearNodesAvailible) {
+		sponsores.append('<h3>Knoten in deiner Nähe:</h3>');
+		sponsores.append(sponsoresList);
+		sponsores.fadeIn('slow');
+	}
 }
 
 function loadKnotList(position) {
