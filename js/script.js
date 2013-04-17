@@ -57,7 +57,7 @@ function getUrlParams() {
 function createAccessButton() {
 	var urlParams = getUrlParams();
 	console.log("urlParams: ", urlParams);
-	$('#accessBtn').empty().html('<a href="'+urlParams.access+'?req='+urlParams.req+'"><span>Weitersurfen</span></a>');
+	$('#accessBtn').empty().html('<a href="'+urlParams.access+'?req='+encodeURIComponent(urlParams.req)+'"><span>Weitersurfen</span></a>');
 }
 createAccessButton();
 
