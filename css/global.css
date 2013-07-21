@@ -147,7 +147,11 @@ h1 {
   background-image: url(../images/header-logo.png);
   background-position: center top;
   background-repeat: no-repeat;
-  padding-top: 130px;
+  padding-top: 150px;
+}
+
+h1 > span {
+	display: block;
 }
 
 p, ul, ol, dl, blockquote {
