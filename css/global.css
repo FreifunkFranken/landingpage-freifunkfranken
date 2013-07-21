@@ -173,6 +173,11 @@ b, strong { font-weight: 700; }
 i, em { font-style: italic; }
 small { font-size: 1em; }
 
+em {
+  color: green;
+  font-weight: 700;
+}
+
 /* LINKS */
 a, a:visited {
   outline: none;
