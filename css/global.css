@@ -152,6 +152,7 @@ h1 {
 
 h1 > span {
 	display: block;
+	font-size: 75%;
 }
 
 p, ul, ol, dl, blockquote {
