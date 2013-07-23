@@ -49,31 +49,7 @@ aside {
   text-align: center;
   margin: 0 0 2em 0;
 }
-  
-/*
-aside div {
-  display: inline-block;
-  padding: 0.809em;
-  text-align: center;
-  }
-  
-aside div > span:nth-child(1) {
-  color: rgb(170,170,170);
-  text-transform: uppercase;
-  font-size: 0.618em;
-  white-space: nowrap;
-  padding-right: 0.809em;
-  letter-spacing: 0.11em;
-  }
-  
-aside a {
-  color: rgb(217,217,217);
-  border: none;
-  font-weight: 700;
-  text-decoration:none;
-}
-*/
-  
+
 aside a:hover, aside a.selected {color: rgb(136,136,136);}
 
 aside h3 {
