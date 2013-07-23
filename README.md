@@ -2,19 +2,20 @@ landingpage-freifunkfranken
 ===========================
 
 Eine Startseite, die einem Benutzer von Freifunk-Franken angezeigt wird, bevor er Zugriff auf das Internet bekommt.
-Infos gibts unter www.freifunk-franken.de
+Informationen gibt es unter www.freifunk-franken.de .
 
 Status
 ------
 
-Diese Seite befindet sich noch in aktiver Entwicklung und wird noch nicht produktiv eingesetzt.
+Diese Seite befindet sich in aktiver Entwicklung und wird noch nicht produktiv eingesetzt.   
+Der aktuelle Stand ist einsehbar auf http://mojoaxel.github.io/landingpage-freifunkfranken/
 
 Mitmachen
 ---------
 
-Es dürfen gerne aussagekräftige Issues angelegt werden. Bitte für jedes Problem ein eigenes Ticket.
-Es werden auch gerne Pull-Requets angenommen. Bitte die Request möglich klein halten und immer nur ein Issue auf einmal fixen.
-Commit-Masseges und Source-Comments bitte auf Englisch.
+Es dürfen gerne aussagekräftige Issues angelegt werden. Bitte für jedes Problem ein eigenes Ticket.   
+Es werden auch Pull-Requets angenommen. Die Request dabei möglich klein halten und immer nur ein Issue auf einmal fixen.   
+Commit-Messages und Source-Comments bitte auf Englisch.   
 Danke!
 
 Installation
@@ -27,4 +28,4 @@ git checkout gh-pages
 npm install connect
 node server.js
 ```
-Nun kann man die Landingpage unter http://localhost:8080 öffnen.
+Nun kann die Landingpage unter http://localhost:8080 geöffnet werden.
