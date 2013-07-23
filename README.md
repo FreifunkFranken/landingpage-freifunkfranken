@@ -28,4 +28,4 @@ git checkout gh-pages
 npm install connect
 node server.js
 ```
-Nun kann die Landingpage unter http://localhost:8080 geöffnet werde.
+Nun kann die Landingpage unter http://localhost:8080 geöffnet werden.
