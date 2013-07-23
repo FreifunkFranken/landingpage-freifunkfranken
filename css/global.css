@@ -41,6 +41,8 @@ body {
 
 img { max-width:100%; max-height:100%; }
 
+#container { padding-bottom: 1.618em; }
+
 article { padding:0 0 1.618em 0; }
 
 aside {
