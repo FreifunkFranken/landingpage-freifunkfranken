@@ -1,3 +1,5 @@
+$(document).ready(function() {
+	
 if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
 	var viewportmeta = document.querySelectorAll('meta[name="viewport"]')[0];
 	if (viewportmeta) {
@@ -8,34 +10,21 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 	}
 }
 
-/*
-// Set the initial width
-$('.column-width').text($('.column-width').width()/16+'em');
-$('.aside-width').text($('.aside-width').width()/16+'em');
-
-// Find the width on resize
-$(window).resize(function() {
-  $('.column-width').text($('.column-width').width()/16+'em');
-  $('.aside-width').text($('.aside-width').width()/16+'em');
-});
-
-$('.column-width').waypoint(function(event, direction) {
-  if (direction === 'down') {
-    $('#main').addClass('fixed');
-  }  else {
-    $('#main').removeClass('fixed');
-  }
-});
-*/
-
-
-$(document).ready(function() {
-
+/*****************************************************************************
+ * Read parameters from url and create the "Access Please" Button
+ * Parameters:
+ *   access: the url to the welcome-page
+ *      req: the url to the url originally requested by the user
+ ****************************************************************************/
 function getUrlParams() {
 	// This function is anonymous, is executed immediately and 
 	// the return value is assigned to QueryString!
 	var query_string = {};
 	var query = window.location.hash.split('#?')[1];
+	
+	if (!query || query.length <= 0) return {};
+	
+	//get parameters from url
 	var vars = query.split("&");
 	for (var i=0;i<vars.length;i++) {
 		var pair = vars[i].split("=");
@@ -50,20 +39,28 @@ function getUrlParams() {
 		} else {
 			query_string[pair[0]].push(pair[1]);
 		}
-	} 
+	}
 	return query_string;
 };
-	
+
 function createAccessButton() {
 	var urlParams = getUrlParams();
-	console.log("urlParams: ", urlParams);
-	$('#accessBtn').empty().html('<a href="'+urlParams.access+'?req='+encodeURIComponent(urlParams.req)+'"><span>Weitersurfen</span></a>');
+	if (urlParams.access && urlParams.req) {
+		$('#accessBtn').empty().html(
+			'<a href="'+urlParams.access+
+			'?req='+encodeURIComponent(urlParams.req)+
+			'"><span>Weitersurfen</span></a>');
+	}
 }
+
 createAccessButton();
 
 
 
 
+/*****************************************************************************
+ * Get the node-list and show the nodes near to the user
+ ****************************************************************************/
 geo = {};
 geo.position = null;
 geo.isLoaded = false;
@@ -93,14 +90,17 @@ function showNearNodes(nodes, position) {
 	});
 	
 	var sponsores = $('section.sponsores');
-	sponsores.hide();
+	
+	//hide and empty sponsor list
+	sponsores.hide().empty();
 
 	var nearNodesAvailible = false;
 	var sponsoresList = $('<ul>');
 	
 	$.each(nodes, function(index, node) {
-		//only show nodes that are realy near the user. Nodes in many km distance are not interesting.
-		if (nodes[index].distance < 0.001) {
+		//only show nodes that are really near the user. Nodes in many km distance are not interesting.
+		//console.log(nodes[index].distance);
+		if (nodes[index].distance < 0.1) {
 			sponsoresList.append('<li><a href="https://netmon.freifunk-franken.de/router_status.php?router_id=' + nodes[index].id + '">' + nodes[index].name + '</a></li>');
 			nearNodesAvailible = true;
 		}
@@ -117,6 +117,7 @@ function showNearNodes(nodes, position) {
 function loadKnotList(position) {
 	var nodes;
 	$.getJSON('api/nodes.json', function(nodes, textStatus, jqXHR) {
+		console.log(nodes);
 		showNearNodes(nodes, position);
 	}).fail(function(jqxhr, textStatus, error) {
 		console.error('error loading nodes.json: ', error)
@@ -124,25 +125,25 @@ function loadKnotList(position) {
 }
 
 function geolocation_action(position){
-	//only do this once
+	//do this once every 30 seconds
 	if (geo.isLoaded) return;
 	geo.isLoaded = true;
 	setTimeout(function() {
-		//invalidate the position after 5 Seconds
 		geo.isLoaded = false;
-	}, 5000);
+		navigator.geolocation.getCurrentPosition(geolocation_action, errors_action);
+	}, 30000);
 	
 	geo.position = position;
-	
+	/*
 	$('#statistics_position').html(
 		"LON: " + Math.round( position.coords.longitude *10000)/10000 + ", " + 
 		"LAT: " + Math.round( position.coords.latitude *10000)/10000
 	);
+	*/
 	loadKnotList(position);
 }
 
-if (!geo.isLoaded) {
-	navigator.geolocation.getCurrentPosition(geolocation_action, errors_action);
-}
+//get current location to start loading the node-list
+//navigator.geolocation.getCurrentPosition(geolocation_action, errors_action);
 
 });
