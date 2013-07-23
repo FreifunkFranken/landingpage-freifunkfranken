@@ -23,7 +23,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
-  }
+}
 
 /* ROOT */
 
@@ -82,7 +82,7 @@ footer {
   border-bottom: 1px solid rgb(102,102,102);
   clear: both;
 }
-  
+
 footer p { 
   float: left; 
   margin-right: 1em; 
@@ -96,15 +96,15 @@ body {
   font-size: 1em;
   line-height: 1.618em;
   color: rgb(70, 63, 76);
-  }
+}
 
 h2, h3, h4, h5, h6, aside, .column-width, .aside-width {
   font-family: "proxima-nova-1","proxima-nova-2", arial, helvetica, sans-serif;
   font-weight: 700;
   font-size: 1em;
   line-height: 1.618em;
-  }
-  
+}
+
 footer {
   font-family: "proxima-nova-1","proxima-nova-2", arial, helvetica, sans-serif;
   font-style:italic;
@@ -135,7 +135,7 @@ p, ul, ol, dl, blockquote {
     margin-bottom:1.618em;
     max-width:30em;
 }
-    
+
 p.intro {
   font-size: 1.309em;
   margin-bottom: 1em;
@@ -164,7 +164,7 @@ a:hover {
   outline: none;
   color: #dc0067;
   text-decoration: underline;
-  }
+}
   
 a:active, a:focus { outline: none; }
 
