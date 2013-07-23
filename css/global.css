@@ -38,13 +38,13 @@ body {
   margin:auto;
   background: rgba(255,255,255,0.75);
 }
-    
-aside { width: 100%; }  
+
 img { max-width:100%; max-height:100%; }
 
 article { padding:0 0 1.618em 0; }
 
 aside {
+  width: 100%;
   max-width: 100%;
   text-align: center;
   margin: 0 0 2em 0;
