@@ -12,11 +12,6 @@ div {
   -webkit-box-sizing:border-box; /* Safari */
 }
 
-em {
-  color: green;
-  font-weight: 700;
-}
-
 header h2:before, header h2:after { width: 42%; }
   
 h1 { font-size: 4.4em; line-height:1.618em; margin-bottom:0.1em; }

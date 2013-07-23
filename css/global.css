@@ -147,7 +147,11 @@ h1 {
   background-image: url(../images/header-logo.png);
   background-position: center top;
   background-repeat: no-repeat;
-  padding-top: 130px;
+  padding-top: 150px;
+}
+
+h1 > span {
+	display: block;
 }
 
 p, ul, ol, dl, blockquote {
@@ -168,6 +172,11 @@ ol { list-style-type: decimal; margin-left: 1.618em; }
 b, strong { font-weight: 700; }
 i, em { font-style: italic; }
 small { font-size: 1em; }
+
+em {
+  color: green;
+  font-weight: 700;
+}
 
 /* LINKS */
 a, a:visited {
