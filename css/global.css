@@ -174,7 +174,7 @@ a:active, a:focus { outline: none; }
 .button {
   width: 200px;  
   display: inline-block;
-	padding: 4px 12px;
+	padding: 9px 12px;
 	margin-bottom: 0;
 	font-size: 14px;
 	line-height: 20px;
@@ -206,7 +206,6 @@ a:active, a:focus { outline: none; }
 .button a {
   display: block;
   border-radius: 6px;
-  padding: 5px;
   text-decoration:none;
 }
 

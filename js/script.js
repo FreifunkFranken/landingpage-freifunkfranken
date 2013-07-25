@@ -14,7 +14,7 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
  * Read parameters from url and create the "Access Please" Button
  * Parameters:
  *   access: the url to the welcome-page
- *      req: the url to the url originally requested by the user
+ *	  req: the url to the url originally requested by the user
  ****************************************************************************/
 function getUrlParams() {
 	// This function is anonymous, is executed immediately and 
@@ -145,5 +145,38 @@ function geolocation_action(position){
 
 //get current location to start loading the node-list
 //navigator.geolocation.getCurrentPosition(geolocation_action, errors_action);
+
+
+
+
+/*****************************************************************************
+ * Get access and redirect the user to the original location
+ ****************************************************************************/
+$('#accessBtn').click(function(e) {
+	//prevent opening the clicked link
+	e.preventDefault();
+
+	//show loading animation
+	var $btn = $(this);
+	$btn.empty().html('<img src="images/loading.gif" />');
+	
+	//load the access-page in the background
+	$('#result').load('FreifunkFrankenAccess.html', function() {
+		console.log("Access granted!");
+	});
+	
+	$.ajax({
+		type: "GET", 
+		url: "FreifunkFrankenAccess.html",
+		success: function(data){
+			//go to the page the user originally requested
+			history.go(-1);
+		},
+		error: function() {
+			alert("Es gab leider ein Problem :-(");
+			window.location.reload()
+		}
+	});
+});
 
 });
