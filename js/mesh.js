@@ -36,15 +36,15 @@
     canvas.fadeIn(2000);
  }
  
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+  if ( (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) ) {
+    //don't show mash on mobile devices
     return;
+  } else if ($('html').width() <= 1024) {
+    //don't show mash on small devices (tablets, small netbooks) 
+    //because they usually lag the cpu power for the animation.
+    return;	
   } else {
     createMeshAnimation();
-    $(window).resize(function() {
-      //FIXME not working:
-      //$('canvas#mesh').remove();
-      //createMeshAnimation();
-    });
   }
 
 })(jQuery);
