@@ -22,7 +22,7 @@ Installation
 ------------
 
 ```
-git clone https://github.com/mojoaxel/landingpage-freifunkfranken.git
+git clone https://github.com/FreifunkFranken/landingpage-freifunkfranken.git
 cd landingpage-freifunkfranken
 git checkout gh-pages
 npm install connect
