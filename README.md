@@ -8,7 +8,7 @@ Status
 ------
 
 Diese Seite befindet sich in aktiver Entwicklung und wird noch nicht produktiv eingesetzt.   
-Der aktuelle Stand ist einsehbar auf http://mojoaxel.github.io/landingpage-freifunkfranken/
+Der aktuelle Stand ist einsehbar auf http://freifunkfranken.github.io/landingpage-freifunkfranken/
 
 Mitmachen
 ---------
