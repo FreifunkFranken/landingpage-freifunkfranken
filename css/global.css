@@ -112,7 +112,10 @@ footer {
   font-style:italic;
 }
 
-h3 { text-transform:uppercase; letter-spacing:0.1em; }
+h3 { 
+  text-transform:uppercase; 
+  letter-spacing:0.1em; 
+}
 
 h1 {
   text-align: center;
@@ -225,3 +228,26 @@ body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 } 
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+
+
+/* Accordion */
+section.accItem {
+  margin-bottom: 1.618em;
+}
+section.accItem p {
+  margin-bottom: 0;
+}
+section.accItem h3 {
+  cursor: pointer;
+}
+section.accItem > h3:before {
+  content: "\25B6"; /* ▶ BLACK RIGHT-POINTING TRIANGLE */
+  margin-right: 0.2em;
+}
+section.accItem > h3.open:before {
+  content: "\25BC"; /* ▼ BLACK DOWN-POINTING TRIANGLE */
+  margin-right: 0.2em;
+}
+section.accItem.initialized h3 {
+  color: #dc0067;
+}
