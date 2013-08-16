@@ -8,7 +8,7 @@ Status
 ------
 
 Diese Seite befindet sich in aktiver Entwicklung und wird noch nicht produktiv eingesetzt.   
-Der aktuelle Stand ist einsehbar auf http://mojoaxel.github.io/landingpage-freifunkfranken/
+Der aktuelle Stand ist einsehbar auf http://freifunkfranken.github.io/landingpage-freifunkfranken/
 
 Mitmachen
 ---------
@@ -22,7 +22,7 @@ Installation
 ------------
 
 ```
-git clone https://github.com/mojoaxel/landingpage-freifunkfranken.git
+git clone https://github.com/FreifunkFranken/landingpage-freifunkfranken.git
 cd landingpage-freifunkfranken
 git checkout gh-pages
 npm install connect
