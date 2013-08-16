@@ -160,17 +160,18 @@ $('#accessBtn').click(function(e) {
 	var $btn = $(this);
 	$btn.empty().html('<img src="images/loading.gif" />');
 	
-	//load the access-page in the background
-	$('#result').load('FreifunkFrankenAccess.html', function() {
-		console.log("Access granted!");
-	});
-	
 	$.ajax({
 		type: "GET", 
 		url: "FreifunkFrankenAccess.html",
 		success: function(data){
-			//go to the page the user originally requested
-			history.go(-1);
+			//wait for 2 seconds to give the proxy-server time to write the access rights into the database
+			//and than go to the page the user originally requested
+			setTimeout(function() {
+				//history.go(-1); //see bug #32
+				window.history.back()
+			}, 2000);
+			
+			$('#container').fadeOut(2500);
 		},
 		error: function() {
 			alert("Es gab leider ein Problem :-(");
