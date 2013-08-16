@@ -14,12 +14,15 @@
            "overflow": "hidden"
     });
     
-    var btnClose = $('<div class="button" id="btnCloseMesh">Animation entfernen</div>')
+    var btnClose = $('<div id="btnCloseMesh">╳</div>')
       .css({
         "position": "fixed", 
         "top": "10px", 
-        "right": "10px", 
-        "width": "160px"
+        "right": "25px", 
+        "font-size": "bigger",
+        "text-align": "right",
+        "font-weight": "900",
+        "cursor": "pointer"
     }).click(function() {
       btnClose.remove();
       canvas.fadeOut(1000, function() {
