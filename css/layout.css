@@ -58,19 +58,6 @@ aside {
   height:auto;
 }
 
-/* styles for accordion-sections */
-section.accItem {
-  margin-bottom: 1.618em;
-}
-section.accItem p {
-  margin-bottom: 0;
-}
-section.accItem h3 {
-  cursor: pointer;
-}
-section.accItem.initialized h3 {
-  color: #dc0067;
-}
 
 /*
 aside div {

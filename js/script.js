@@ -10,15 +10,16 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 	}
 }
 
-// initialize accordion
-if(!Modernizr.touch) {
-	// init only on none-touch devices (none-mobile)
-	$('.accordion').accordion({
-		handleSelector: 'h3',
-		contentSelector: 'p',
-		initState: (($(window).height() > 700) ? 'unchanged' : 'closed')
-	});
-}
+
+/*****************************************************************************
+ * Accordion
+ ****************************************************************************/
+$('.accordion').accordion({
+	handleSelector: 'h3',
+	contentSelector: 'p',
+	initState: (($(window).height() > 800) ? 'open' : 'closed')
+});
+
 
 /*****************************************************************************
  * Read parameters from url and create the "Access Please" Button

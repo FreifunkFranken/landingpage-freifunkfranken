@@ -159,6 +159,10 @@
 				else if(settings.initState == 'open')
 				{
 					$this
+						.find(settings.handleSelector)
+						.addClass('open');
+						
+					$this
 						.find(settings.contentSelector)
 						.show();
 				}
@@ -171,7 +175,11 @@
 		 */
 		toggle : function( e )
 		{
-			$(this).closest(settings.parentSelector).find(settings.contentSelector).slideToggle();
+			$(this)
+				.toggleClass('open')
+				.closest(settings.parentSelector)
+				.find(settings.contentSelector)
+				.slideToggle();
 		}
 	};
 
