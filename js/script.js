@@ -178,11 +178,16 @@ $('#accessBtn').click(function(e) {
 			//wait for 2 seconds to give the proxy-server time to write the access rights into the database
 			//and than go to the page the user originally requested
 			setTimeout(function() {
-				//history.go(-1); //see bug #32
-				window.history.back()
+				history.go(-1); //see bug #32
+				//window.history.back()
 			}, 2000);
 			
-			$('#container').fadeOut(2500);
+			setTimeout(function() {
+				//history.go(-1); //see bug #32
+				window.history.back()
+			}, 2100);
+			
+			//$('#container').fadeOut(2500);
 		},
 		error: function() {
 			alert("Es gab leider ein Problem :-(");
