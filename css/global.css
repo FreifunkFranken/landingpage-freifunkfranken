@@ -93,7 +93,7 @@ footer p {
 
 /* TYPOGRAPHY */
 body {
-  font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", georgia, serif;
+  font-family: georgia, serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.618em;
@@ -101,14 +101,14 @@ body {
 }
 
 h2, h3, h4, h5, h6, aside, .column-width, .aside-width {
-  font-family: "proxima-nova-1","proxima-nova-2", arial, helvetica, sans-serif;
+  font-family: arial, helvetica, sans-serif;
   font-weight: 700;
   font-size: 1em;
   line-height: 1.618em;
 }
 
 footer {
-  font-family: "proxima-nova-1","proxima-nova-2", arial, helvetica, sans-serif;
+  font-family: arial, helvetica, sans-serif;
   font-style:italic;
 }
 
@@ -232,7 +232,7 @@ body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 /* Accordion */
 section.accItem {
-  margin-bottom: 1.618em;
+  margin-bottom: 0.6em;
 }
 section.accItem p {
   margin-bottom: 0;
