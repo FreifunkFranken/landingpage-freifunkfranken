@@ -4,8 +4,8 @@
  Native Processing Compatible 
  */
 
-int canvas_width = window.innerWidth;
-int canvas_height = window.innerHeight;
+int canvas_width = window.innerWidth-0;
+int canvas_height = window.innerHeight-0;
 
 int canvas_size = int((canvas_width+canvas_height)/2);
 
