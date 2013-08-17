@@ -78,17 +78,20 @@ section.sponsores ul {
 }
 
 footer {
-  margin:1.618em 0 0;
-  padding: 1em 0 0;
+  margin:2em 0 -2em;
+  padding: 0.5em 0 0;
   border-top: 1px solid rgb(102,102,102);
-  border-bottom: 1px solid rgb(102,102,102);
   clear: both;
 }
 
-footer p { 
-  float: left; 
-  margin-right: 1em; 
-  margin-bottom: 1em
+footer ul { 
+  float: left;
+  list-style: none;
+  float: right;
+}
+footer ul li {
+  float: right;
+  margin-right: 1em;
 }
 
 /* TYPOGRAPHY */
