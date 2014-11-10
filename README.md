@@ -4,6 +4,8 @@ landingpage-freifunkfranken
 Eine Startseite, die einem Benutzer von Freifunk-Franken angezeigt wird, bevor er Zugriff auf das Internet bekommt.
 Informationen gibt es unter www.freifunk-franken.de .
 
+Lizenz: CC-BY-SA 2014 by Alexander Wunschik, https://creativecommons.org/licenses/by-sa/2.0/de/
+
 Status
 ------
 
